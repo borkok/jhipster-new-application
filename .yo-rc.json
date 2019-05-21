@@ -34,7 +34,9 @@
     "clientTheme": "none",
     "entitySuffix": "",
     "dtoSuffix": "DTO",
-    "otherModules": []
+    "otherModules": [],
+    "herokuAppName": "jhipster-new-application",
+    "herokuDeployType": "jar"
   },
   "git-provider": "GitHub",
   "git-company": "borkok",
