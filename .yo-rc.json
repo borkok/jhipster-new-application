@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "jhipsterNewApplication",
+    "packageName": "io.github.jhipster.application",
+    "packageFolder": "io/github/jhipster/application",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": false,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "react",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "6.0.1",
+    "jwtSecretKey": "OTE5ZDM5ZTRjNjlmMzUwYTQ0NGU3YjI5OGE2NmU5ZGZjOWZmZTEwYjA5ODFmMTA4NGEwMjUzMDU2MTIxYmM0N2Y1YTFlYWQ2YzE1ZjQyMzQxYjY2MmYxODQxNjJjMGNiODVjMWNhODY1NjMzYTY2OTZmMTU4MjVhNmZmMjY1YjE=",
+    "clientTheme": "none",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "borkok",
+  "repository-name": "jhipster-new-application"
+}
