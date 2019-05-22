@@ -1,0 +1,42 @@
+entity Person {
+	name String required
+}
+
+entity Profile {
+	name String required
+}
+
+entity HowOften {
+	count Integer required, 
+	unit Unit required
+}
+
+enum Unit {
+	DAYS
+}
+
+entity Diagnostic {
+	name String required,
+    description String
+}
+
+entity Execution {
+	planned LocalDate required,
+	done LocalDate,
+    doneComment String
+}
+
+relationship ManyToOne {
+	Execution{diagnostic} to Diagnostic,
+    Execution{person} to Person
+}
+
+relationship ManyToOne {
+	HowOften{diagnostic} to Diagnostic,
+    HowOften{profile} to Profile
+}
+
+relationship ManyToOne {
+	Person{profile} to Profile
+}
+
