@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity HowOften.
+    -->
+    <changeSet id="20190522201445-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="diagnostic_id"
+                                 baseTableName="how_often"
+                                 constraintName="fk_how_often_diagnostic_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="diagnostic"/>
+
+        <addForeignKeyConstraint baseColumnNames="profile_id"
+                                 baseTableName="how_often"
+                                 constraintName="fk_how_often_profile_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="profile"/>
+
+    </changeSet>
+</databaseChangeLog>

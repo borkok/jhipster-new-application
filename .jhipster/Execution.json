@@ -1,0 +1,45 @@
+{
+    "name": "Execution",
+    "fields": [
+        {
+            "fieldName": "planned",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "done",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "doneComment",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "diagnostic",
+            "otherEntityRelationshipName": "execution",
+            "relationshipName": "diagnostic",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "person",
+            "otherEntityRelationshipName": "execution",
+            "relationshipName": "person",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190522201447",
+    "entityTableName": "execution",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

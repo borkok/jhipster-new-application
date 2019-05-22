@@ -1,0 +1,30 @@
+{
+    "name": "Person",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "profile",
+            "otherEntityRelationshipName": "person",
+            "relationshipName": "profile",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190522201443",
+    "entityTableName": "person",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,45 @@
+{
+    "name": "HowOften",
+    "fields": [
+        {
+            "fieldName": "count",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "unit",
+            "fieldType": "Unit",
+            "fieldValues": "DAYS",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "diagnostic",
+            "otherEntityRelationshipName": "howOften",
+            "relationshipName": "diagnostic",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "profile",
+            "otherEntityRelationshipName": "howOften",
+            "relationshipName": "profile",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190522201445",
+    "entityTableName": "how_often",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
